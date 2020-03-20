@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #f4e8ff;
+  font-style: italic;
+  font-size: 4em;
+  background-color: #000000;
+  padding: 0.3em;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+#gradient {
+  background-image: url("https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg")
+}
+
+#navigation {
+  margin-left: 10em;
+  text-align: center;
+}
+
+#left-box {
+  float: left;
+  padding: 1em;
+}
+
+#center-box {
+  float: left;
+  padding: 1em;
+}
+
+#right-box {
+  float: left;
+  padding: 1em;
+}
+
+#generate {
+  background-color: #e6ccff;
+  width: 10em;
+  font-size: 2em;
+  font-family: helvetica;
+}
+
+#create {
+  background-color: #b566ff;
+  width: 10em;
+  font-size: 2em;
+  font-family: helvetica;
+}
+
+#run {
+  background-color: #8400ff;
+  width: 10em;
+  font-size: 2em;
+  font-family: helvetica;
+}
+
+#menu-button {
+  margin-top: 0.5em;
+  background-color: #ffffff;
+  width: 10em;
+  font-size: 2em;
+  display: block;
+}
