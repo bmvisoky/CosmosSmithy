@@ -20,7 +20,7 @@ class HomePage extends Component {
          </div>
          <div id="right-box">
              <div id="run">RUN</div>
-            <button id="menu-button">...</button>
+            <button id="menu-button"><Link to="/initiative">Initiative</Link></button>
             <button id="menu-button">...</button>
             <button id="menu-button">...</button>
         </div>

@@ -18,15 +18,13 @@ class CharacterPage extends Component {
       .then(function(data) {
         monsterData = data
     });
-
-    let statblock = document.querySelector("#stats")
     this.generateMonster = this.generateMonster.bind(this);
   }
   generateMonster() {
     let randMonster = monsterData[Math.floor(Math.random() * monsterData.length)]
     this.getStats(randMonster)
   }
-  
+
   abilityScore(skill) {
       console.log(skill)
       let modifier = Math.floor((skill - 10) / 2)
@@ -38,7 +36,6 @@ class CharacterPage extends Component {
       return `${skill} (${sign}${modifier})`
       console.log(modifier)
   }
-
   addAttack(actions) {
     document.getElementById("attacks").innerHTML = "";
     for (let i in actions) {
