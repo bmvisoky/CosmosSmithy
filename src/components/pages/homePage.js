@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
   render() {
@@ -8,7 +9,7 @@ class HomePage extends Component {
           <div id="left-box">
              <div id="generate">GENERATE</div>
              <button id="menu-button">npc</button>
-             <button id="menu-button">monster</button>
+             <button id="menu-button"><Link to="/character">Monster</Link></button>
              <button id="menu-button">...</button>
           </div>
           <div id="center-box">
@@ -24,7 +25,7 @@ class HomePage extends Component {
             <button id="menu-button">...</button>
         </div>
       </div>
-      </div>
+     </div>
     )
   }
 }

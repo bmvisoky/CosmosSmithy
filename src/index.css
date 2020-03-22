@@ -82,6 +82,8 @@ h2 {
 }
 #gradient {
   height: 100vh;
+  width: 100%;
+  align-self: center;
   background-image: url("https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg")
 }
 
@@ -131,4 +133,78 @@ h2 {
   width: 10em;
   font-size: 2em;
   display: block;
+}
+
+/* MONSTER STAT STYLING */
+#statblock {
+  margin: auto;
+  width: 350px;
+  font-size: 11px;
+  background-color: #FDF1DC;
+  color: black;
+  padding: 5px;
+}
+
+#generator {
+    margin: auto;
+    display: block;
+}
+
+.gradient {
+    background: linear-gradient(10deg, #A73335, white);
+    height:5px;
+    margin:7px 0px;
+    padding: 0px;
+}
+.name {
+    font-size:225%;
+    font-family:Georgia, serif;
+    font-variant:small-caps;
+    font-weight:bold;
+    color:#A73335;
+
+}
+.description {
+    font-style:italic;
+}
+.bold {
+    font-weight:bold;
+    font-size: 15px;
+}
+.red {
+    color:#A73335;
+}
+table {
+    width:100%;
+    border:0px;
+    border-collapse:collapse;
+    color:#A73335;
+}
+th, td {
+    width:50px;
+    text-align:center;
+}
+
+span {
+  font-size: 15px;
+}
+
+.actions {
+    font-size:175%;
+    font-variant:small-caps;
+    margin:17px 0px 0px 0px;
+}
+.hr {
+    background: #A73335;
+    height:2px;
+    padding: 0px;
+}
+
+.attack {
+    margin:5px 0px;
+}
+
+.attackname {
+    font-weight:bold;
+    font-style:italic;
 }
