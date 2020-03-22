@@ -208,3 +208,32 @@ span {
     font-weight:bold;
     font-style:italic;
 }
+
+/* CSS For Journal Page */
+.Journalbody {
+  background-image: url("https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg");
+
+  color: white;
+  font-size: 20pt;
+}
+
+.JournalTextInput {
+  width: 90%;
+  padding: 10px 20px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.JournalButton{
+    font: 17px Calibri;
+    width: auto;
+    float: left;
+    cursor: pointer;
+    padding: 7px;
+}
+.Journaldiv {
+    padding: 10px;
+
+    overflow: hidden;
+}
