@@ -15,7 +15,7 @@ class HomePage extends Component {
           <div id="center-box">
              <div id="create">CREATE</div>
              <button id="menu-button">world</button>
-             <button id="menu-button">note</button>
+             <button id="menu-button"><Link to="/journal">Journal</Link></button>
              <button id="menu-button">...</button>
          </div>
          <div id="right-box">

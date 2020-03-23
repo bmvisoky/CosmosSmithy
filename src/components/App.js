@@ -7,6 +7,8 @@ import InitiativePage from './pages/initiativePage.js';
 import NavBar from './headerComponent/navBar.js';
 import Footer from './footerComponent/footer.js';
 import HeaderBar from './headerComponent/headerBar.js';
+import JournalPage from './pages/journalPage.js';
+
 
 
 
@@ -21,6 +23,7 @@ class App extends Component {
                  <Route path="/" component={HomePage} exact/>
                  <Route path="/character" component={CharacterPage}/>
                  <Route path="/initiative" component={InitiativePage}/>
+                 <Route path="/journal" component={JournalPage}/>
                  </Switch>
           <Footer />
         </div>
