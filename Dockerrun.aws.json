@@ -1,12 +1,12 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "bmvisoky/cosmos",
+    "Name": "bmvisoky/cosmossmithy",
     "Update": "true"
   },
   "Ports": [
     {
-      "ContainerPort": "5000"
+      "ContainerPort": "3000"
     }
   ],
   "Logging": "/var/log/nginx"
