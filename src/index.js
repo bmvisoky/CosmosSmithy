@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const title = React.createElement(
     'h1',
     {id: 'title', className: 'header'},
