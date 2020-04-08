@@ -1,19 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from "./logo.png"
+import { useState } from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button} from 'reactstrap';
 
-class NavBar extends Component {
-  render() {
-    return (
-      <header>
-        <ul id="headerButtons">
-          <li className="navButton"><Link to="/initiative">Initiative</Link></li>
-          <li className="navButton"><Link to="/character">Character</Link></li>
-          <li className="navButton"><Link to="/">Home</Link></li>
-          <li className="navButton"><Link to="/journal">Journal</Link></li>
-        </ul>
-      </header>
-    )
-  }
+const NavBar = (props) => {
+  const [collapsed, setCollapsed] = useState(true);
+  const toggleNavbar = () => setCollapsed(!collapsed);
+
+  return (
+    <div>
+      <Navbar color="#e1e8f0" light>
+        <NavbarBrand href="/"><img id="logo" src={Logo} alt="Cosmos Smithy!"/></NavbarBrand>
+        <NavItem><Button>Login!</Button></NavItem>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/character/">Character</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/initiative/">Initiative</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/journal/">Journal</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
+
 
 export default NavBar;

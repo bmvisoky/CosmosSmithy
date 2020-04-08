@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 
-
-
-    let monsterData;
+let monsterData;
 
 
 class CharacterPage extends Component {
@@ -121,7 +119,6 @@ class CharacterPage extends Component {
            </div>
          </div>
      </div>
-     <script src="monsterGen.js"></script>
      </body>
     )
   }

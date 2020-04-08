@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Stitch, AnonymousCredential, RemoteMongoClient } from "mongodb-stitch-browser-sdk";
+import { hasLoggedInUser } from "../stitch/authentication.js"
 
 import HomePage from './pages/homePage.js';
 import CharacterPage from './pages/characterPage.js';
@@ -8,17 +10,17 @@ import NavBar from './headerComponent/navBar.js';
 import Footer from './footerComponent/footer.js';
 import HeaderBar from './headerComponent/headerBar.js';
 import JournalPage from './pages/journalPage.js';
-
-
-
+import Carousel from './carousel.js';
+import { StitchAuthProvider, useStitchAuth } from "./StitchAuth.js"
+import { Button } from 'reactstrap';
 
 class App extends Component {
   render() {
     return (
      <BrowserRouter>
         <div id="WebSiteBox">
-              <HeaderBar />
               <NavBar />
+              <Carousel />
                  <Switch>
                  <Route path="/" component={HomePage} exact/>
                  <Route path="/character" component={CharacterPage}/>
