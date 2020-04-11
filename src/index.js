@@ -10,17 +10,6 @@ const title = React.createElement(
     'Cosmos Smithy'
 )
 
-// ReactDOM.render(<App />, document.getElementById('app'));
-//
-// <html>
-//   <head>
-//     <title>My website</title>
-//   </head>
-//   <script type="text/javascript" src="bundle.js"></script>
-//   <body>
-//     <div id="app"></div>
-//   </body>
-// </html>
 ReactDOM.render(
     App,
     document.getElementById('root')
