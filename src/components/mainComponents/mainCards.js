@@ -9,13 +9,13 @@ const MainCards = (props) => {
         <CardTitle>Create</CardTitle>
         <CardText>Write your ideas down!!</CardText>
         <Button href="/journal" block>Journal</Button>
-        <Button block>Coming Soon!</Button>
+        <Button href="/character" block>Character</Button>
         <Button block>Coming Soon!</Button>
       </Card>
       <Card body>
         <CardTitle>Generate</CardTitle>
         <CardText>Generate things in a pinch!</CardText>
-        <Button href="/character" block>Monsters</Button>
+        <Button href="/monster" block>Monsters</Button>
         <Button block>Coming Soon!</Button>
         <Button block>Coming Soon!</Button>
       </Card>
@@ -32,22 +32,3 @@ const MainCards = (props) => {
 };
 
 export default MainCards;
-// <div id="left-box">
-//    <div id="generate">GENERATE</div>
-//    <button id="menu-button">npc</button>
-//    <button id="menu-button"><Link to="/character">Monster</Link></button>
-//    <button id="menu-button">...</button>
-//
-// </div>
-// <div id="center-box">
-//    <div id="create">CREATE</div>
-//    <button id="menu-button">world</button>
-//    <button id="menu-button"><Link to="/journal">Journal</Link></button>
-//    <button id="menu-button">...</button>
-// </div>
-// <div id="right-box">
-//    <div id="run">RUN</div>
-//   <button id="menu-button"><Link to="/initiative">Initiative</Link></button>
-//   <button id="menu-button">...</button>
-//   <button id="menu-button">...</button>
-// </div>

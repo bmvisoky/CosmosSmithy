@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Stitch, AnonymousCredential, RemoteMongoClient } from "mongodb-stitch-browser-sdk";
-import { hasLoggedInUser } from "../stitch/authentication.js"
 
 import HomePage from './pages/homePage.js';
-import CharacterPage from './pages/characterPage.js';
+import MonsterPage from './pages/monsterPage.js';
 import InitiativePage from './pages/initiativePage.js';
+import CharacterPage from './pages/characterPage.js';
 import NavBar from './headerComponent/navBar.js';
 import Footer from './footerComponent/footer.js';
-import HeaderBar from './headerComponent/headerBar.js';
 import JournalPage from './pages/journalPage.js';
-import Carousel from './carousel.js';
-import { StitchAuthProvider, useStitchAuth } from "./StitchAuth.js"
-import { Button } from 'reactstrap';
+import Carousel from './headerComponent/carousel.js';
 
 class App extends Component {
   render() {
@@ -23,9 +19,10 @@ class App extends Component {
               <Carousel />
                  <Switch>
                  <Route path="/" component={HomePage} exact/>
-                 <Route path="/character" component={CharacterPage}/>
+                 <Route path="/monster" component={MonsterPage}/>
                  <Route path="/initiative" component={InitiativePage}/>
                  <Route path="/journal" component={JournalPage}/>
+                 <Route path="/character" component={CharacterPage}/>
                  </Switch>
           <Footer />
         </div>

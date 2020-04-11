@@ -9,7 +9,6 @@ class HomePage extends Component {
      <div id="gradient">
       <div id="navigation">
       <MainCards />
-
       </div>
      </div>
     )
