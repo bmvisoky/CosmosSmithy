@@ -3,24 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const title = React.createElement(
     'h1',
     {id: 'title', className: 'header'},
     'Cosmos Smithy'
 )
 
-// ReactDOM.render(<App />, document.getElementById('app'));
-//
-// <html>
-//   <head>
-//     <title>My website</title>
-//   </head>
-//   <script type="text/javascript" src="bundle.js"></script>
-//   <body>
-//     <div id="app"></div>
-//   </body>
-// </html>
 ReactDOM.render(
     App,
     document.getElementById('root')

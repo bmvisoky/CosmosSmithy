@@ -84,11 +84,18 @@ h2 {
   height: 100vh;
   width: 100%;
   align-self: center;
-  background-image: url("https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg")
+  background-color: #e1e8f0;
+}
+
+#carouselCtr {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 390px;
 }
 
 #navigation {
-  margin-left: 10em;
+  margin: 0 auto;
+  padding-left: 15%;
+  padding-right: 15%;
   text-align: center;
 }
 

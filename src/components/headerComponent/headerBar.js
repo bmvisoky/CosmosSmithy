@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-
+import Logo from "./logo.png"
 class HeaderBar extends Component {
   render() {
     return (
-      <header>
-
-       <h1 id="Title"> COSMOS SMITHY </h1>
-
-      </header>
+     <img id="logo" src={Logo} alt="Cosmos Smithy!"/>
     )
   }
 }
