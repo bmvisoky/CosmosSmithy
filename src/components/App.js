@@ -9,6 +9,9 @@ import NavBar from './headerComponent/navBar.js';
 import Footer from './footerComponent/footer.js';
 import JournalPage from './pages/journalPage.js';
 import Carousel from './headerComponent/carousel.js';
+import LoginPage from './pages/accountPage.js';
+
+
 
 class App extends Component {
   render() {
@@ -23,6 +26,8 @@ class App extends Component {
                  <Route path="/initiative" component={InitiativePage}/>
                  <Route path="/journal" component={JournalPage}/>
                  <Route path="/character" component={CharacterPage}/>
+                 <Route path="/login" component={LoginPage}/>
+
                  </Switch>
           <Footer />
         </div>
