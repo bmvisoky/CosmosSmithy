@@ -15,6 +15,9 @@ const NavBar = (props) => {
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
+          <NavItem>
+            <NavLink href="/login/">Log In</NavLink>
+          </NavItem>
             <NavItem>
               <NavLink href="/">Home</NavLink>
             </NavItem>
@@ -27,6 +30,7 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink href="/journal/">Journal</NavLink>
             </NavItem>
+
           </Nav>
         </Collapse>
       </Navbar>
