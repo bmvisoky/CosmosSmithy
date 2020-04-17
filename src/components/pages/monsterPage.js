@@ -124,7 +124,7 @@ class MonsterPage extends Component {
                <span>13 (2d8+4) bludgeoning damage.</span>
              </div>
            </div>
-                </Card>
+          </Card>
      </div>
 
      </body>
