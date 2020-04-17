@@ -7,7 +7,7 @@ const MainCards = (props) => {
     <Row>
       <Card body>
         <CardTitle>Create</CardTitle>
-        <CardText>Write your ideas down!!</CardText>
+        <CardText>Write your ideas down!</CardText>
         <Button href="/journal" block>Journal</Button>
         <Button href="/character" block>Character</Button>
         <Button block>Coming Soon!</Button>
