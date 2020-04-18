@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from "./logo.png"
 import { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button} from 'reactstrap';
+import DiceComponent from "../mainComponents/modal.js"
 
 const NavBar = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -12,6 +13,9 @@ const NavBar = (props) => {
     <div>
       <Navbar color="#e1e8f0" light>
         <NavbarBrand href="/"><img id="logo" src={Logo} alt="Cosmos Smithy!"/></NavbarBrand>
+        <NavItem style = {{listStyleType: 'none'}}>
+          <DiceComponent />
+        </NavItem>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
@@ -30,7 +34,6 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink href="/journal/">Journal</NavLink>
             </NavItem>
-
           </Nav>
         </Collapse>
       </Navbar>
