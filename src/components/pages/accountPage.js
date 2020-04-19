@@ -80,14 +80,14 @@ render(){
       <div class="container">
         <input type="email" id="txtEmail" placeholder="Email"/>
         <input type="password" id="txtPassword" placeholder="Password"/>
-        <button id="btnLogin" class="btn ActionBttn" onClick= {this.authApp.loginfunc}>
+        <button id="btnLogin" class="btn ActionBttn">
           Log In
         </button>
 
-        <button id="btnSignUp" class="btn OtherButton" onClick= {this.signupfunc}>
+        <button id="btnSignUp" class="btn OtherButton">
           Sign Up
         </button>
-        <button id="btnSignOut" class="btn ActionBttn hide" onClick ={this.authApp.signOutFunc}>
+        <button id="btnSignOut" class="btn ActionBttn hide">
           Log Out
         </button>
       </div>
