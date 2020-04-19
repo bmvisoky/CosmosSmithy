@@ -9,32 +9,6 @@ class JournalPage extends Component {
           let cell1 = row.insertCell(0);
           cell1.innerHTML = document.getElementById("msg").value;
         }
-      /*
-
-      const msg = document.getElementById('msg');
-
-
-      let JournalTxt = msg.value;
-
-
-      const textToBLOB = new Blob([JournalTxt], { type: 'text/plain' });
-      const sFileName = 'JournalEntry.txt';
-
-      let newLink = document.createElement("a");
-      newLink.download = sFileName;
-
-      if (window.webkitURL != null) {
-          newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-      }
-      else {
-          newLink.href = window.URL.createObjectURL(textToBLOB);
-          newLink.style.display = "none";
-          document.body.appendChild(newLink);
-      }
-
-      newLink.click();
-  }
-*/
   render() {
     return (
 
