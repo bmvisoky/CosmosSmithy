@@ -9,31 +9,31 @@ const CharacterSheet = (props) => {
 
       <Row>
          <Col>
-            <Row></Row>
+            <Row id="charNAME">Berserker</Row>
             <Row></Row>
          </Col>
          <Col>
             <Row>Health:</Row>
-            <Row>0</Row>
+            <Row id="charHEALTH">0</Row>
          </Col>
          <Col>
-            <Row>Armor Class:</Row>
-            <Row>0</Row>
+            <Row> Armor Class:</Row>
+            <Row id="charARMORCLASS">0</Row>
          </Col>
          <Col>
             <Row>Speed:</Row>
-            <Row>0</Row>
+            <Row id="charSPEED">0</Row>
          </Col>
       </Row>
       <Col>
-      <Row>Str: 10</Row>
-      <Row>Dex: 10</Row>
-      <Row>Con: 10</Row>
-      <Row>Int: 10</Row>
-      <Row>Wis: 10</Row>
-      <Row>Cha: 10</Row>
+      <Row id="#charSTR">Str: 10</Row>
+      <Row id="charDEX">Dex: 10</Row>
+      <Row id="charCON">Con: 10</Row>
+      <Row id = "charINT">Int: 10</Row>
+      <Row id = "charWIS">Wis: 10</Row>
+      <Row id="charCHA">Cha: 10</Row>
       </Col>
-      <Button>Generate!</Button>
+      <Button id = "charGENERATE">Generate!</Button>
    </Card>
   </div>
   );
