@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
-
+import { Card, Button, CardTitle, CardText, Row, Col, Table, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class JournalPage extends Component {
     saveFile = function() {
+          let table = document.getElementById("JournalTable");
+          let row = table.insertRow(1);
+          let cell1 = row.insertCell(0);
+          cell1.innerHTML = document.getElementById("msg").value;
+        }
+      /*
+
       const msg = document.getElementById('msg');
 
 
@@ -27,7 +34,7 @@ class JournalPage extends Component {
 
       newLink.click();
   }
-
+*/
   render() {
     return (
 
@@ -49,7 +56,15 @@ class JournalPage extends Component {
               <div class="Journaldiv">
                   <input type="button" class="JournalButton" id="bt" value="Save Journal" onClick={this.saveFile} />
               </div>
-
+              <Table hover id="JournalTable">
+                 <thead>
+                   <tr>
+                     <th>Journal</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                 </tbody>
+                </Table>
           </div>
       </body>
     )
