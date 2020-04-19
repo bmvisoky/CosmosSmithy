@@ -1,15 +1,14 @@
 import React from 'react';
-import { Card, Button, CardTitle, CardText, Row, Container, Col } from 'reactstrap';
+import { Card, CardTitle, Row, Col } from 'reactstrap';
 
 const CharacterSheet = (props) => {
   return (
   <div class="text-center" style={{width: '500px'}}>
-   <Card body>
-      <CardTitle>Name</CardTitle>
+   <Card body style={card}>
+      <CardTitle id="charNAME">Name</CardTitle>
 
       <Row>
          <Col>
-            <Row id="charNAME">Berserker</Row>
             <Row></Row>
          </Col>
          <Col>
@@ -26,17 +25,43 @@ const CharacterSheet = (props) => {
          </Col>
       </Row>
       <Col>
-      <Row id="#charSTR">Str: 10</Row>
-      <Row id="charDEX">Dex: 10</Row>
-      <Row id="charCON">Con: 10</Row>
-      <Row id = "charINT">Int: 10</Row>
-      <Row id = "charWIS">Wis: 10</Row>
-      <Row id="charCHA">Cha: 10</Row>
+         <Col>
+            <Row>Str: </Row>
+            <Row id="charSTR">10</Row>
+         </Col>
+         <Col>
+            <Row>Dex: </Row>
+            <Row id="charDEX">10</Row>
+         </Col>
+         <Col>
+            <Row>Con: </Row>
+            <Row id="charCON">10</Row>
+         </Col>
+         <Col>
+            <Row>Int: </Row>
+            <Row id="charINT">10</Row>
+         </Col>
+         <Col>
+            <Row>Wis: </Row>
+            <Row id="charWIS">10</Row>
+         </Col>
+         <Col>
+            <Row>Cha: </Row>
+            <Row id="charCHA">10</Row>
+         </Col>
       </Col>
-      <Button id = "charGENERATE">Generate!</Button>
    </Card>
   </div>
   );
 };
+
+const card = {
+  textAlign: 'center',
+  width: '500px',
+  margin: 'auto',
+  fontSize: '11px',
+  backgroundColor: '#FDF1DC',
+  color: 'black',
+  padding: '5px 0'};
 
 export default CharacterSheet;

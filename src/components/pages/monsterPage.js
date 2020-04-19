@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import { Card, Button, CardTitle, CardText, Row } from 'reactstrap';
+import { Card } from 'reactstrap';
 let monsterData;
 
 const card = {  margin: 'auto',
@@ -38,7 +37,6 @@ class MonsterPage extends Component {
       }
 
       return `${skill} (${sign}${modifier})`
-      console.log(modifier)
   }
   addAttack(actions) {
     document.getElementById("attacks").innerHTML = "";
@@ -56,10 +54,6 @@ class MonsterPage extends Component {
   }
 
   getStats(monster) {
-      let newSpan = document.createElement('span')
-      let newDiv = document.createElement('div')
-      let atk = document.querySelector('#attacks')
-
       document.querySelector(".name").innerHTML = monster.name
       document.querySelector(".description").innerHTML = monster.size + " " + monster.subtype + ", " + monster.alignment
       document.querySelector(".AC").innerHTML = monster.armor_class

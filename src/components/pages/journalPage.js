@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import { Card, Button, CardTitle, CardText, Row, Col, Table, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Table } from 'reactstrap';
 
 class JournalPage extends Component {
     saveFile = function() {
@@ -15,15 +14,9 @@ class JournalPage extends Component {
 
       <body class = "JournalBody">
           <div class="Journaldiv">
-
             <div class="Journaldiv">
               New Journal Entry: <br></br>
             </div>
-
-
-
-
-
               <div class="JournalTextInput">
                   <textarea class="JournalTextInput" id="msg" name="msg" placeholder="Create Journal Entry"></textarea>
               </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import { Card, Button, CardTitle, CardText, Row, Col, Table, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Card, Button, CardTitle, Row, Col, Table, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
 class InitiativePage extends Component {

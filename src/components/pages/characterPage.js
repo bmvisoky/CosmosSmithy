@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import { Card, Button, CardTitle, CardText, Row } from 'reactstrap';
+import { Card, Button, Row, Col } from 'reactstrap';
 import CharacterSheet from '../mainComponents/characterSheet.js';
 
 let characterArray;
 let randomIndex;
 let randomCharacter;
 
-const card = {  margin: 'auto',
-  width: '350px',
-  fontSize: '11px',
-  backgroundColor: '#FDF1DC',
-  color: 'black',
-  padding: '5px'};
 
 class CharacterPage extends Component {
 
@@ -37,9 +30,6 @@ class CharacterPage extends Component {
    }
 
    getStats(character) {
-      let newSpan = document.createElement('span')
-      let newDiv = document.createElement('div')
-      
       document.querySelector("#charNAME").innerHTML = randomCharacter;
       document.querySelector("#charARMORCLASS").innerHTML = Math.floor((Math.random() * 30) + 1)
       document.querySelector("#charHEALTH").innerHTML = Math.floor((Math.random() * 20) + 1)
@@ -55,12 +45,36 @@ class CharacterPage extends Component {
 
    render() {
     return (
-	    <CharacterSheet />
-           <button onClick={this.generateCharacter}>Generate!</button>
+
+      <div id="gradient">
+         <div style={container}>
+         <Col>
+          <Row>
+            <CharacterSheet />
+            <Card style={card}>
+               Generated Description goes here. WIP.
+            </Card>
+          </Row>
+          <Button onClick={this.generateCharacter} id="charGENERATE">Generate!</Button>
+         </Col>
+         </div>
+      </div>
     )
   }
-
 }
 
+const container = {
+   padding: '70px',
+   paddingLeft: '25%',
+   margin: 'auto'
+};
+
+const card = {
+  textAlign: 'center',
+  width: '500px',
+  fontSize: '11px',
+  backgroundColor: '#FDF1DC',
+  color: 'black'
+};
 
 export default CharacterPage;

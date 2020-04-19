@@ -3,7 +3,6 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const DiceComponent = (props) => {
   const {
-    buttonLabel,
     className
   } = props;
 
