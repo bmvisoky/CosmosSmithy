@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import { Table } from 'reactstrap';
+import { Table, Button } from 'reactstrap';
 
 class JournalPage extends Component {
-    saveFile = function() {
-          let table = document.getElementById("JournalTable");
-          let row = table.insertRow(1);
-          let cell1 = row.insertCell(0);
-          cell1.innerHTML = document.getElementById("msg").value;
-        }
   render() {
     return (
-
-
       <body class = "JournalBody">
           <div class="Journaldiv">
             <div class="Journaldiv">
@@ -21,7 +13,7 @@ class JournalPage extends Component {
                   <textarea class="JournalTextInput" id="msg" name="msg" placeholder="Create Journal Entry"></textarea>
               </div>
               <div class="Journaldiv">
-                  <input type="button" class="JournalButton" id="bt" value="Save Journal" onClick={this.saveFile} />
+                  <Button class="JournalButton" id="bt" onClick={this.saveFile}>Save Journal</Button>
               </div>
               <Table hover id="JournalTable">
                  <thead>
@@ -35,6 +27,12 @@ class JournalPage extends Component {
           </div>
       </body>
     )
+  }
+  saveFile() {
+    let table = document.getElementById("JournalTable");
+    let row = table.insertRow(1);
+    let cell1 = row.insertCell(0);
+    cell1.innerHTML = document.getElementById("msg").value;
   }
 }
 

@@ -3,47 +3,8 @@ import { Card, Button, CardTitle, Row, Col, Table, Form, FormGroup, Label, Input
 
 
 class InitiativePage extends Component {
-  addToInit() {
-    let table = document.getElementById("initTable");
-    let row = table.insertRow(1);
-    let cell1 = row.insertCell(0);
-    let cell2 = row.insertCell(1);
-    let cell3 = row.insertCell(2);
-    // Add some text to the new cells:
-    cell1.innerHTML = document.getElementById("charInit").value;
-    cell2.innerHTML = document.getElementById("charName").value;
-    cell3.innerHTML = document.getElementById("charHealth").value;
-  }
-
-  startBattle() {
-    let table = document.getElementById("initTable");
-    let switching = true;
-    var i, x, y, shouldSwitch;
-
-    while (switching) {
-      switching = false;
-      let rows = table.rows;
-
-      for(i = 1; i < (rows.length - 1); i++) {
-        shouldSwitch = false;
-
-        x = rows[i].getElementsByTagName("TD")[0];
-        y = rows[i + 1].getElementsByTagName("TD")[0];
-
-        if( Number(x.innerHTML) < Number(y.innerHTML) ) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if( shouldSwitch ) {
-        rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
-        switching = true;
-      }
-    }
-  }
   render() {
     return (
-     <body>
      <div id="gradient">
      <div style={container}>
       <Col>
@@ -94,8 +55,45 @@ class InitiativePage extends Component {
        </Col>
        </div>
     </div>
-</body>
     )
+  }
+  addToInit() {
+    let table = document.getElementById("initTable");
+    let row = table.insertRow(1);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    // Add some text to the new cells:
+    cell1.innerHTML = document.getElementById("charInit").value;
+    cell2.innerHTML = document.getElementById("charName").value;
+    cell3.innerHTML = document.getElementById("charHealth").value;
+  }
+
+  startBattle() {
+    let table = document.getElementById("initTable");
+    let switching = true;
+    var i, x, y, shouldSwitch;
+
+    while (switching) {
+      switching = false;
+      let rows = table.rows;
+
+      for(i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+
+        x = rows[i].getElementsByTagName("TD")[0];
+        y = rows[i + 1].getElementsByTagName("TD")[0];
+
+        if( Number(x.innerHTML) < Number(y.innerHTML) ) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if( shouldSwitch ) {
+        rows[i].parentNode.insertBefore(rows[i+1], rows[i]);
+        switching = true;
+      }
+    }
   }
 }
 

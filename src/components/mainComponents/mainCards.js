@@ -3,7 +3,7 @@ import { Card, Button, CardTitle, CardText, Row } from 'reactstrap';
 
 const MainCards = (props) => {
   return (
-   <div class="text-center">
+   <div className="text-center">
     <Row>
       <Card body>
         <CardTitle>Create</CardTitle>

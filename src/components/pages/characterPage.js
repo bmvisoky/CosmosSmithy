@@ -13,7 +13,7 @@ class CharacterPage extends Component {
 
    super(props);
    this.generateCharacter = this.generateCharacter.bind(this);
-
+   
    }
 
    generateCharacter() {
